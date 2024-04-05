@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta property="og:image" content="C:/Users/19819/Desktop/新建文件夹/23_5.jpg">
+    <meta property="og:image" content="https://example.com/thumbnail.jpg">
+    <link rel="stylesheet" href="C:/Users/19819/Desktop/lx.js">
+    <style>
+   
+    li {
+      list-style: none;
+      content: "ℹ️";
+      
+    }
+
+    menu {
+      display: flex;
+    }
+
+    u {
+      text-decoration: red wavy underline;
+    }
+picture{
+  width: 500px;
+}
+    img {
+  width: 200px;
+  background-blend-mode:difference;
+    }
+
+    aside {
+      width: 40%;
+      padding-left: .5rem;
+      margin-left: .5rem;
+      float: right;
+      box-shadow: inset 5px 0 5px -5px #29627e;
+      font-style: italic;
+      color: #29627e;
+    }
+
+    table {
+      border-collapse: collapse;
+      width: 200px;
+      height: 200px;
+      border: 2px solid rgb(100, 100, 100);
+
+      letter-spacing: 0;
+    }
+
+    tr,
+    th,
+    td {
+      text-align: center;
+      border: 1px solid rgb(100, 100, 100);
+    }
+
+    data:hover::after {
+      content: ' (ID ' attr(value) ')';
+      font-size: .7em;
+    }
+
+    details>summary {
+      cursor: pointer;
+    }
+
+    mark {
+      clip-path: inset(100%);
+      clip: rect(1px, 1px, 1px, 1px);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+      background-color: aqua;
+    }
+
+    ins::before,
+    ins::after {
+      clip-path: inset(100%);
+      clip: rect(1px, 1px, 1px, 1px);
+      height: 1px;
+      overflow: hidden;
+      position: absolute;
+      white-space: nowrap;
+      width: 1px;
+    }
+
+    ins::before {
+      content: " [insertion start] ";
+    }
+
+    ins::after {
+      content: " [insertion end] ";
+    }
+
+    kbd {
+      display: inline-block;
+      background-color: rgb(236, 236, 236);
+      line-height: 2;
+      padding: 2px 4px;
+      border: 1px solid #b4b4b4;
+    }
+    video::cue { 
+    font-size: 1rem;
+}
+video {
+    width: 250px;
+}
+.w{
+  width: 200px;
+  height: 200px;
+  background-image: url("新建文件夹/0150f45de6ae33a8012138536549b8.jpg@1280w_1l_2o_100sh.jpg");
+  background-blend-mode: multiply;
+  background-color: #b4b4b4;
+  isolation: auto;
+}
+.w1{
+  width: 100px;
+  height: 100px;
+  background-color: aquamarine;
+  background-image: url("新建文件夹/R-C\ \(11\).jpg");
+  background-blend-mode:lighten;
+  background-color: #ff0000;
+  mix-blend-mode: saturation;
+  animation:cubic-bezier(0.47, 0, 0.745, 0.715);
+  animation-delay: 2sms;
+  
+  padding: 50px;
+  border: 5px dotted;
+  background-image: linear-gradient(60deg, red, yellow, red, yellow, red);
+}
+.w2{
+  width: 70px;
+  height: 70px;
+  background-color: rgb(158, 159, 255);
+  margin-top: -40px;
+  margin-left: 40px;
+  background-image: url("新建文件夹/2.jpg");
+  background-blend-mode:difference;
+  background-color: #2f90c9;
+}
+
+.l{
+  width: 100px;
+  height: 100px;
+  
+  padding: 50px;
+  accent-color:auto;
+  background-color: #ff0000;
+  border: 10px dotted;
+  background-origin: padding-box;
+  background-image: linear-gradient(60deg, red, yellow, red, yellow, red);
+}
+.l1{
+  border: 5px dotted;
+  
+  background-clip:padding-box;
+  background-origin:border-box;
+}
+.m{
+  column-gap: 100px;
+}
+.m1{
+  
+  height: 100px;
+  column-gap:50px ;
+}
+.m1>div{
+  background-color: burlywood;
+  border: 1px solid;
+  
+  
+}
+.lo{
+  column-count: 3;
+  column-rule:dashed;
+  
+}
+p.r{
+  color: #ff0000;
+}
+li:hover::after{
+  content:"Data-x:" attr(data-x);
+  opacity: 0.5;
+}
+t-custom-element::part(oo):hover{
+  color: #2f90c9;
+  width: 100px;
+  height: 100px;
+  border: 1px solid black;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px black;
+}
+t-custom-element::part(oo):hover {
+  background-color: #0c0d19;
+  border-color: #0c0d33;
+}
+
+tabbed-custom-element::part(tab) {
+  color: #0c0dcc;
+  border-bottom: transparent solid 2px;
+}
+
+tabbed-custom-element::part(tab):hover {
+  background-color: #0c0d19;
+  border-color: #0c0d33;
+}
+
+tabbed-custom-element::part(tab):hover:active {
+  background-color: #0c0d33;
+}
+
+tabbed-custom-element::part(tab):focus {
+  box-shadow:
+    0 0 0 1px #ff0077 inset,
+    0 0 0 1px #0a84ff,
+    0 0 0 4px rgba(216, 13, 6, 0.3);
+}
+
+tabbed-custom-element::part(active) {
+  color: #91ff00;
+  border-color: #0a84ff !important;
+}
+
+    </style>
+
+</head>
+
+<body onload="">
+<input type="week" max="week-w60" min="week-w01">
+<fieldset>
+    <div>
+        <legend>sdadgwhsh:</legend>
+        <input type="radio" id="d" value="d" name="drone">
+        <label for="d">上课</label></div>
+
+    <div><input type="radio" id="g" value="g" name="drone">
+        <label for="g">第三个</label></div>
+    <div>
+        <input type="radio" id="h" value="h" name="drone">
+
+
+        <label for="h">阿达</label></div>
+    <div>
+        <input type="submit">
+    </div>
+</fieldset>
+
+<input type="image" height="50" width="50" src="C:/Users/19819/Desktop/新建文件夹/1.jpg">
+<form>
+    <input type="button" value="Start machine" accesskey="z" disabled>
+</form>
+<p>The machine is stopped.</p>
+<input type="color">
+<input type="file">
+<input type="month">
+
+<template id="tabbed-custom-element">
+    <style type="text/css">
+    *, ::before, ::after {
+      box-sizing: border-box;
+      padding: 1rem;
+    }
+    :host {
+      display: flex;
+    }
+
+    </style>
+    <div part="tab active">Tab 1</div>
+    <div part="tab">Tab 2</div>
+    <div part="tab">Tab 3</div>
+</template>
+
+<tabbed-custom-element></tabbed-custom-element>
+
+
+<template id="t-custom-element">
+    <div>
+        <p part="oo">dsgdfjs</p>
+        <p part="oo">fg;sagaln;mas;lhfmalknhgwBIUGOHGPwojgbsjdlgnbSKJGBKJBGKASBKGBRRBEIUGABSLOJBojlbkjgsb
+            kjgbwrgbobsjlkgblkjwrbgksd</p>
+    </div>
+</template>
+<t-custom-element></t-custom-element>
+<div class="m1">
+    <div id="lo"><p>sdcgshsdf</p></div>
+    <div><p>sdfhshsfhWHSFHRTGJKHGKDH</p></div>
+    <div><p>fsdhetrahafhea</p></div>
+</div>
+<div class="w">
+    <div class="w1">
+
+    </div>
+    <div class="w2">
+
+    </div>
+</div>
+<div class="l l1">
+    <p class="l1">hello world this is a ?????????</p>
+
+</div>
+<div class="w1"><p>hello world this is a ?????????</p></div>
+<p class="m"> hello world this is a <br>?????????hello world this is a ?????????hello <br>world this is a ?????????hello
+    world this is a ?????????v</p>
+<br><br><br><br><br>
+<abbr title="标题">pshfk</abbr>
+<base href="C:/Users/19819/Desktop/新建文件夹/">
+<base target="_top">
+<base target="_blank" href="C:/Users/19819/Desktop/新建文件夹/">
+<em>123456</em>
+<i>123456</i>
+<cite>sagwe</cite>
+<strong>sfg</strong>
+<p>
+    <mark>大家</mark>
+    可以看一下<cite>《三国演义》</cite></p>
+<form action="">
+    <input type="text">
+</form>
+<dfn>
+    <a>
+    123456789
+</dfn>
+<form action="">
+    <input type="range" name="b" value="50"/> +
+    <input type="number" name="a" value="10"/> =
+    <output name="result"></output>
+</form>
+<form oninput="result.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" name="b" value="50"/> +
+    <input type="number" name="a" value="10"/> =
+    <output name="result"></output>
+</form>
+<map id="primary" name="primary">
+    <area shape="rect" coords="200,50,100,60,50,120,20" href="https://developer.mozilla.org/docs/Web/CSS" alt="">
+</map>
+<img usemap="#primary" src="C:/Users/19819/Desktop/新建文件夹/23_5.jpg" alt="134">
+<u usemap="#primary">
+    skageik
+</u>
+<em>1546496165416486</em>
+<del>
+    123
+    465456
+</del>
+<button autofocus>sdgsahtsj</button>
+<article>
+    <p>的那份违规i问感受到看过你</p>
+    <aside>
+        <p contenteditable="true">asdgwag网上购物公司的高伟光</p>
+    </aside>
+</article>
+<audio controls muted="ture">
+    <source src="C:/Users/19819/Desktop/1.mp3">
+    <p>我是音频？</p>
+</audio>
+<input type="text" list="popularHours">
+<datalist id="popularHours">
+    <option value="12:00"></option>
+    <option value="13:00"></option>
+</datalist>
+<ul>
+    <li>aasgfjwi:ghsdngwrk</li>
+    <li>s,fshe:trjet</li>
+    <li>
+        <bdi>kh554d.sghrwh:</bdi>
+        f42dsherh
+    </li>
+    <li><span>sdfhgr4.5:</span>fdshr245</li>
+</ul>
+<ul>
+    <li>aasgfjwi:ghsdngwrk</li>
+    <li>s,fshe:trjet</li>
+    <li>
+        <data value="我i收">kh554d.sghrwh:</data>
+        f42dsherh
+    </li>
+    <li>
+        <data value="哇打算给我">sdfhgr4.5:</data>
+        fdshr245
+    </li>
+</ul>
+<p><bdo dir="rtl">wo shi bdo This is a World</bdo></p>
+<p><bdo dir="rtl">This text will go right to left.</bdo></p>
+<iframe src="C:/Users/19819/Desktop/1.mp3" frameborder="0">
+
+</iframe>
+<pre>
+      system.out
+        class A{
+          system.out.print(""00);
+          &
+          &amp;
+        }
+    </pre>
+<table>
+    <caption>这是表的标题？</caption>
+    <colgroup>
+        <col>
+        <col span="2" style="background-color: #29627e;">
+    </colgroup>
+    <tr>
+
+        <th>10</th>
+        <th>10</th>
+        <th>10</th>
+        <th>10</th>
+        <th>10</th>
+
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+        <td>2</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+        <td>3</td>
+    </tr>
+    <tr>
+        <td>4</td>
+        <td>4</td>
+        <td>4</td>
+        <td>4</td>
+        <td>4</td>
+    </tr>
+    <tr>
+        <td>5</td>
+        <td>5</td>
+        <td>5</td>
+        <td>5</td>
+        <td>5</td>
+    </tr>
+</table>
+<input type="button" list="l" value="but">
+<input type="text" list="l">
+<datalist id="l">
+
+    <a href="C:/Users/19819/Desktop/新建文件夹/23_5.jpg">
+        <option value="html"></option>
+    </a>
+</datalist>
+<p>dghsfhj<a href="p">&lt;a&gt;p</a>dafhjaetj</p>
+<dl>
+    <dt>hello</dt>
+    <dd>11345454</dd>
+</dl>
+<dl>
+    <div>
+        <dt>world</dt>
+        <dd>挨个看</dd>
+    </div>
+    <div>
+        <dt>cxhgswh</dt>
+        <dd>当时刚好我</dd>
+    </div>
+</dl>
+<details>
+    <summary>summary</summary>
+    <p autofocus>阿达K歌我去不过i</p>
+</details>
+<p>hello<dfn id="#p">&lt;a&gt;</dfn>wordl</p>
+<dialog open>
+    <input type="button">
+</dialog>
+<ins>
+    this is a ins
+</ins>
+<var>
+    y=y+2
+</var>
+<embed src="C:/Users/19819/Desktop/flower.mp4" type="video/webm" height="200px">
+<form>
+    <fieldset>
+        <legend>字duan集</legend>
+        <input type="button" value="system">
+        <label for=""></label>
+    </fieldset>
+</form>
+<figure>
+    <img src="C:/Users/19819/Desktop/新建文件夹/2.jpg" alt="">
+    <figcaption>只是</figcaption>
+</figure>
+<p>this is a <q>html</q></p>
+<kbd>ctrl</kbd><kbd>shift</kbd>
+<menu>
+    <li>
+        <button onclick="copy()">Copy</button>
+    </li>
+    <li>
+        <button onclick="copy()">Copy</button>
+    </li>
+</menu>
+<meter value="200" max="1000" min="0" high="1000">
+
+</meter>
+<nav>
+    <ol>
+        <li><a href="">ngvasdg</a></li>
+    </ol>
+</nav>
+<noscript>
+    <a href="https://www.mozilla.org/">agwe</a>
+</noscript>
+
+<label for="m">Choose:</label>
+<select name="" id="m">
+    <optgroup label="p">
+        <option value="">5</option>
+    </optgroup>
+    <optgroup label="p">
+        <option>4</option>
+        <option>1</option>
+        <option>3</option>
+        <option>2</option>
+    </optgroup>
+</select>
+
+
+<label for="dino-select">Choose a dinosaur:</label>
+<select id="dino-select">
+    <optgroup label="Theropods">
+        <option>Tyrannosaurus</option>
+        <option>Velociraptor</option>
+        <option>Deinonychus</option>
+    </optgroup>
+    <optgroup label="Sauropods">
+        <option>Diplodocus</option>
+        <option>Saltasaurus</option>
+        <option>Apatosaurus</option>
+    </optgroup>
+</select>
+<form action="" oninput="re.value=parseInt(a.value)+parseInt(b.value)">
+    <input type="range" id="b" name="b" value="10">+
+    <input type="number" id="a" name="a" value="10">=
+    <output name="re" for="a b">60</output>
+</form>
+<picture>
+    <source srcset="C:/Users/19819/Desktop/新建文件夹/3.jpg " media="(min-width:100px)">
+    <img src="C:/Users/19819/Desktop/新建文件夹/3.jpg" alt="">
+</picture>
+<portal id="k" src="https://example.com">
+    <input type="button" value="click" list="k">
+</portal>
+<progress value="80" max="100" aria-busy="true">
+
+</progress>
+
+<div aria-busy="false" aria-describedby="progress-bar">
+    <!-- content is for this region is loading -->
+</div>
+
+<!-- ... -->
+
+<progress id="progress-bar" aria-label="Content loading..."></progress>
+<ruby>
+    名
+    <rp></rp>
+    <rt>min</rt>
+    <rp></rp>
+</ruby>
+<s>this is a today</s>
+<p>
+    你打款给你我哭 <samp>库萨克你可够</samp> 给你看上课的感慨
+
+</p>
+<section>
+    <a href="#">Previous article</a>
+    <a href="#">Next article</a>
+</section>
+<section>
+    <h1>caption</h1>
+    <p>sdgrwhshsdf</p>
+
+</section>
+<slot name="k
+">&lt;
+</slot>
+<span>hello world</span>
+<p>祭祀看过阿斯顿<small>给我热狗</small>撒旦和软件和</p>
+
+<table>
+    <thead>
+    <tr>
+        <th scope="row">hello</th>
+        <th colspan="3">world</th>
+        <th></th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td scope="row">hi</td>
+        <td>ok</td>
+    </tr>
+    <tr>
+        <td>ppppp</td>
+        <td>wwwwww</td>
+    </tr>
+    </tbody>
+    <tfoot>
+    ag
+    </tfoot>
+</table>
+
+
+<p autocapitalize="on" autofocus>jkasdgjnwlgnsln
+    <wbr>
+    ghrn;&shy;hmeh
+</p>
+&shy;
+<template>
+    <thead>
+    <tr>
+        <td>打开官网看</td>
+    </tr>
+    </thead>
+    <tfoot>
+    asgh
+    </tfoot>
+</template>
+
+<textarea name="text" id="text" cols="30" rows="10" autocomplete="off" readonly>
+  高达十万人asdg 
+</textarea>
+<footer>
+    saga
+</footer>
+<video controls>
+
+    <source src="C:/Users/19819/Desktop/sp.mp4" type="video/mp4">
+    <track default src="C:/Users/19819/Desktop/firday.vtt" kind="captions" srclang="en"/>
+    <track default src="C:/Users/19819/Desktop/firday.vtt" kind="subtitles" srclang="zh-cn"/>
+    
+</video>
+
+
+<video controls
+       src="/media/cc0-videos/friday.mp4">
+    <track default
+           kind="captions"
+           srclang="en"
+           src="/media/examples/friday.vtt"/>
+    Sorry, your browser doesn't support embedded videos.
+</video>
+<p>fhdehfhed
+    <time datetime="20:00">20:00</time>
+</p>
+
+<button accesskey="Ctrl+m"><a href="C:/Users/19819/Desktop/新建文件夹/3.jpg">Ctrl</a></button>
+
+
+<p>If you need to relax, press the
+    <strong><u>S</u></strong>tress reliever!</p>
+
+<button accesskey="s">Stress reliever</button>
+
+<p class="r" autocapitalize="characters" draggable="false">this is a hello</p>
+<textarea inputmode="text" name="" id="" cols="30" rows="10" autocapitalize="on" autofocus draggable="true"></textarea>
+
+
+<template id="element-details-template">
+    <style>
+      details {font-family: "Open Sans Light", Helvetica, Arial, sans-serif }
+      .name {font-weight: bold; color: #217ac0; font-size: 120% }
+      h4 {
+        margin: 10px 0 -8px 0;
+        background: #217ac0;
+        color: white;
+        padding: 2px 6px;
+        border: 1px solid #cee9f9;
+        border-radius: 4px;
+      }
+      .attributes { margin-left: 22px; font-size: 90% }
+      .attributes p { margin-left: 16px; font-style: italic }
+
+    </style>
+    <details>
+        <summary>
+            <code class="name">&lt;<slot name="element-name">NEED NAME</slot>&gt;</code>
+            <i class="desc">
+                <slot name="description">NEED DESCRIPTION</slot>
+            </i>
+        </summary>
+        <div class="attributes">
+            <h4>Attributes</h4>
+            <slot name="attributes"><p>None</p></slot>
+        </div>
+    </details>
+    <hr>
+</template>
+
+
+<ul>
+    <li data-x="10241">
+        楼上楼下学佛啊
+    </li>
+    <li>给我Sikh</li>
+    <li>萨格还是稍微</li>
+</ul>
+<script type="module" src="C:/Users/19819/Desktop/lx.js">
+import "lx.js"
+</script>
+
+
+
+<p dir="ltr" inputmode="text">是肯定更好看文化理念是多久发货呢哦按去年偶就发哈结案的发挥那你还加大返回加大了盒饭额你很努力阿森纳和阿萨</p>
+</body>
+
+</html>
